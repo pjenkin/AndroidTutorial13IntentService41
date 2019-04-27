@@ -1,5 +1,6 @@
 package com.example.intents35;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,5 +26,13 @@ public class Bacon extends AppCompatActivity {
             }
         });
     }
+
+    // go to Apples activity
+    public void onClick()
+    {
+        Intent i = new Intent(this, Apples.class);   // create instance of Intent
+        startActivity(i);                                       // use intent (cf segue)
+    }
+
 
 }
