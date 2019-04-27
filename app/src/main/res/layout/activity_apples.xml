@@ -8,7 +8,7 @@
     tools:context=".Apples">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/apples_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="203dp"
@@ -33,4 +33,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+<!-- NB onClick will require parameters like so: public void onClick(View view) -->
+
+    <EditText
+        android:id="@+id/applesInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="293dp" />
 </android.support.constraint.ConstraintLayout>

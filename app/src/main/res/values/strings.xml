@@ -5,4 +5,5 @@
     <string name="title_activity_bacon">Bacon</string>
     <string name="bacon_text">Bacon</string>
     <string name="go_to_apples">Go To Apples</string>
+    <string name="name">Name</string>
 </resources>
