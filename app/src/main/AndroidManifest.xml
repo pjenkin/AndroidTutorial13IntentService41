@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.intentservice41">
+    package="com.example.serviceintentservice41">
 
     <application
         android:allowBackup="true"
@@ -9,18 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <service
+            android:name="com.example.serviceintentservice41.PNJService"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <activity
-            android:name="com.example.intentservice41.Bacon"
+            android:name="com.example.serviceintentservice41.Bacon"
             android:label="@string/title_activity_bacon"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.example.intentservice41.Apples">
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.serviceintentservice41.Apples">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".PNJIntentService" />
+
+        <service android:name="com.example.serviceintentservice41.PNJIntentService" />
     </application>
 
 </manifest>

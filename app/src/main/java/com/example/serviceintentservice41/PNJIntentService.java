@@ -1,16 +1,15 @@
-package com.example.intentservice41;
+package com.example.serviceintentservice41;
 
 import android.app.IntentService;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
-import android.support.annotation.Nullable;
 
 public class PNJIntentService extends IntentService {
 
-    private static final String TAG = "intentservice41";
-    // max 23 characters - package: com.example.intentservice41 is 27
+    private static final String TAG = "serviceintentservice41";
+    // max 23 characters - package: com.example.serviceintentservice41 is 27
 
     // IntentService must: (1) have constructor (2) implement onHandleIntent
 

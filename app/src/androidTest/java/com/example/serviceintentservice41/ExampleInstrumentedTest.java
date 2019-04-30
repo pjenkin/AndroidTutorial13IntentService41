@@ -1,4 +1,4 @@
-package com.example.intentservice41;
+package com.example.serviceintentservice41;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

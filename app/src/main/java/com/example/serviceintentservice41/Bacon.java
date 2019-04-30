@@ -1,4 +1,4 @@
-package com.example.intentservice41;
+package com.example.serviceintentservice41;
 
 import android.content.Intent;
 import android.os.Bundle;
