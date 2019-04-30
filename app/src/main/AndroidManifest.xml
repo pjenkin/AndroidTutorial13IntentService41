@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.intents35">
+    package="com.example.intentservice41">
 
     <application
         android:allowBackup="true"
@@ -10,16 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Bacon"
+            android:name="com.example.intentservice41.Bacon"
             android:label="@string/title_activity_bacon"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".Apples">
+        <activity android:name="com.example.intentservice41.Apples">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".PNJIntentService" />
     </application>
 
 </manifest>

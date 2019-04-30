@@ -1,4 +1,4 @@
-package com.example.intents35;
+package com.example.intentservice41;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,10 @@ public class Apples extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apples);
+
+        // start up the Intent Service as an instance of the bespoke class
+        Intent intentService = new Intent(this, PNJIntentService.class);
+        startService(intentService);
 
         Bundle baconData = getIntent().getExtras();
         if (baconData == null)

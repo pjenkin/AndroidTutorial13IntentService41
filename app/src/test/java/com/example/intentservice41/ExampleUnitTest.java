@@ -1,4 +1,4 @@
-package com.example.intents35;
+package com.example.intentservice41;
 
 import org.junit.Test;
 
